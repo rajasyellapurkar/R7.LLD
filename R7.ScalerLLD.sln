@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R7.TicTacToe.Strategy", "R7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R7.SnakeAndLadders", "R7.SnakeAndLadders\R7.SnakeAndLadders.csproj", "{AE445B2E-1AAC-445D-8D63-8A5DB6A0B6CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R7.ParkingLot", "R7.ParkingLot\R7.ParkingLot.csproj", "{43473513-8C54-4B3B-BEAF-798AE80EAB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R7.ParkingLot", "R7.ParkingLot\R7.ParkingLot.csproj", "{43473513-8C54-4B3B-BEAF-798AE80EAB61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R7.DSA", "R7.DSA\R7.DSA.csproj", "{40FE8F57-D5F4-4312-8E38-D4DBE7798FD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{43473513-8C54-4B3B-BEAF-798AE80EAB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43473513-8C54-4B3B-BEAF-798AE80EAB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43473513-8C54-4B3B-BEAF-798AE80EAB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40FE8F57-D5F4-4312-8E38-D4DBE7798FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FE8F57-D5F4-4312-8E38-D4DBE7798FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FE8F57-D5F4-4312-8E38-D4DBE7798FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FE8F57-D5F4-4312-8E38-D4DBE7798FD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
