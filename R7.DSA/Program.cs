@@ -1,6 +1,7 @@
 ﻿using R7.DSA.Arrays;
 using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
+using R7.DSA.MultiDimensionalArrays;
 
 namespace R7.DSA
 {
@@ -8,15 +9,17 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"{LengthOfLongestConsecutiveOnes.Count("11101001")}");
+            AntiDiagonalElements.AnitDiagonalOfAnArray([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
         }
 
         private static void OldProgramExecutions()
         {
 
-            int[][] a = ArrayForGivenIntegerN.Form2DArray(5);
+            int[][] a = PatternPrinting2.Form2DArray(5);
             Common.Print2DArray(a);
-            int result = SmallestSubArrayWithMinAndMax.SmallestSubArrayLength([9, 5, 5, 7, 5, 9, 1]);
-            result = SmallestSubArrayWithMinAndMax.SmallestSubArrayLengthSimplified([9, 5, 5, 7, 5, 9, 1]);
+            int result = ClosestMinMax.SmallestSubArrayLength([9, 5, 5, 7, 5, 9, 1]);
+            result = ClosestMinMax.SmallestSubArrayLengthSimplified([9, 5, 5, 7, 5, 9, 1]);
 
             //Two Sum Problem
             int[] twoSumArr = [2, 7, 11, 15];
@@ -61,6 +64,8 @@ namespace R7.DSA
             CommonElementsInTwoArrays.CommonElements([2, 1, 4, 10], [3, 6, 2, 10, 10]);
 
             Console.WriteLine($"{PairWithGivenXor.Count([5, 4, 10, 15, 7, 6], 5)}");
+
+            Console.WriteLine($"{SpecialSubsequencesAG.Count("ABCGAG")}");
         }
     }
 }

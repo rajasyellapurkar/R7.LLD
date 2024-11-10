@@ -1,6 +1,6 @@
 ﻿namespace R7.DSA.Arrays
 {
-    public class ArrayForGivenIntegerN
+    public class PatternPrinting2
     {
         /// <summary>
         /// Given an integer N, return a 2D array with below pattern

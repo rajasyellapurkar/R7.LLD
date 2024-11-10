@@ -1,6 +1,6 @@
 ﻿namespace R7.DSA.Arrays
 {
-    public class SmallestSubArrayWithMinAndMax
+    public class ClosestMinMax
     {
         public static int SmallestSubArrayLength(int[] a)
         {
