@@ -8,10 +8,6 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            foreach (string s in FizzBuzzProblem.FizzBuzzArrayOfStrings(15))
-            {
-                Console.WriteLine(s);
-            }
         }
 
         private static void OldProgramExecutions()
@@ -32,11 +28,39 @@ namespace R7.DSA
             int[] hashingProblem2Result = HashingProblem2.HashingProblem2UsingHashMap(hashingProblem2);
             Console.WriteLine($"{hashingProblem2Result[0]} {hashingProblem2Result[1]}");
 
-            //Doesn't handle more than one occurence
-            int[][] anagramResult = AnagramsProblem.Anagrams(["cat", "dog", "god", "odg"]);
-
             Console.WriteLine(CountTotalSetBits.CountSetBitsSumApproach_1(5));
             Console.WriteLine(CountTotalSetBits.CountSetBitsSumApproach_2(5));
+
+
+            foreach (string s in FizzBuzzProblem.FizzBuzzArrayOfStrings(15))
+            {
+                Console.WriteLine(s);
+            }
+
+            Console.WriteLine($"MaxPossibleLength of odd-even sub-sequence: {OddEvenSubSequence.MaxPossibleLength([36, 41, 55, 35, 52, 36, 34, 92, 13, 32, 42])}");
+
+            int[] arr = [1, 2, 3, 4, 5];
+            arr = RotateArrayByKSteps.RotateArray(arr, 42);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"{arr[i]} ");
+            }
+
+            Console.WriteLine(PrimalPowerOfArray.PrimalPower([-11, 7, 8, 9, 10, 11]));
+
+            arr = MultiplicationOfPreviousAndNext.MultipliedArray([5, 17, 100, 11]);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"{arr[i]} ");
+            }
+
+            MultipleLeftRotationOfArray.MultipleLeftRotatedArray([1, 2, 3, 4, 5], [2, 3]);
+
+            AnagramsProblem.Anagrams(["dog", "ctt", "god", "tct", "odg"]);
+
+            CommonElementsInTwoArrays.CommonElements([2, 1, 4, 10], [3, 6, 2, 10, 10]);
+
+            Console.WriteLine($"{PairWithGivenXor.Count([5, 4, 10, 15, 7, 6], 5)}");
         }
     }
 }

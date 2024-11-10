@@ -2,57 +2,41 @@
 
 namespace R7.DSA.Hashing
 {
-    public class LengthIndexModel
-    {
-        public int Length { get; }
-        public int Index { get; }
-
-        public LengthIndexModel(int length, int index)
-        {
-            Length = length;
-            Index = index;
-        }
-    }
-
     public static class AnagramsProblem
     {
-        public static int[][] Anagrams(string[] arr)
+        public static List<List<int>> Anagrams(string[] arr)
         {
-            Dictionary<int, LengthIndexModel> anagramWordSum = new Dictionary<int, LengthIndexModel>();
+            Dictionary<string, List<int>> anagramWordSum = new Dictionary<string, List<int>>();
+            List<List<int>> result = new List<List<int>>();
             int N = arr.Length;
-            int[][] result = new int[N][];
-            int resultIndex = 0;
             for (int i = 0; i < N; i++)
             {
-                int sum = GetStringCharSum(arr[i]);
-                anagramWordSum[sum] = new LengthIndexModel(arr[i].Length, i);
+                string sortedWord = arr[i].Sort();
+                if (!anagramWordSum.ContainsKey(sortedWord))
+                {
+                    anagramWordSum[sortedWord] = [i+1];
+                }
+                else
+                {
+                    anagramWordSum[sortedWord].Add(i+1);
+                }
             }
 
-            for (int i = 0; i < N; i++)
+            foreach(string key in  anagramWordSum.Keys)
             {
-                int sum = GetStringCharSum(arr[i]);
-                if (anagramWordSum.ContainsKey(sum))
+                if (anagramWordSum[key].Count > 1)
                 {
-                    LengthIndexModel lengthIndexModel = anagramWordSum[sum];
-                    if (lengthIndexModel.Length == arr[i].Length)
-                    {
-                        result[resultIndex] = [i, lengthIndexModel.Index];
-                        resultIndex++;
-                    }
+                    result.Add(anagramWordSum[key]);
                 }
             }
             return result;
         }
 
-        private static int GetStringCharSum(string str)
+        public static string Sort(this string str)
         {
-            int sum = 0;
-            foreach (char c in str)
-            {
-                int x = c - 'a';
-                sum += x;
-            }
-            return sum;
+            char[] charArr = str.ToCharArray();
+            Array.Sort(charArr);
+            return new string(charArr);
         }
     }
 }
