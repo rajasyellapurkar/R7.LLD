@@ -9,8 +9,6 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"{LengthOfLongestConsecutiveOnes.Count("11101001")}");
-            AntiDiagonalElements.AnitDiagonalOfAnArray([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
         }
 
         private static void OldProgramExecutions()
@@ -66,6 +64,16 @@ namespace R7.DSA
             Console.WriteLine($"{PairWithGivenXor.Count([5, 4, 10, 15, 7, 6], 5)}");
 
             Console.WriteLine($"{SpecialSubsequencesAG.Count("ABCGAG")}");
+
+            Console.WriteLine($"{LengthOfLongestConsecutiveOnes.Count("11101001")}");
+
+            AntiDiagonalElements.AnitDiagonalOfAnArray([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+
+            int[][] pascalTriangle = PascalTriangle.PascalTriangleGenerator(5);
+            Common.Print2DArray(pascalTriangle);
+
+            int[][] rotatedMatrixBy90 = RotateMatrixByNinetyDegree.RotateMatrixBy90([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+            Common.Print2DArray(rotatedMatrixBy90);
         }
     }
 }
