@@ -2,6 +2,7 @@
 using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
 using R7.DSA.MultiDimensionalArrays;
+using R7.DSA.Sorting;
 
 namespace R7.DSA
 {
@@ -9,7 +10,7 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            SubArrayWithZeroSum.Exists([1,1,1,1,1,1,1]);
+            ArrayWithSumOfTwoEqualSomeOfOtherTwoElements.Find([7, 3, 2, 8, 12, 1, 5, 4]);
         }
 
         private static void OldProgramExecutions()
@@ -82,6 +83,14 @@ namespace R7.DSA
                 [0, 0, 0, 0]]);
 
             MinDistanceBetweenTwoEquals.FindIndices([2, 1, 4, 2, 6, 4, 2, 3, 2, 4, 3]);
+
+            SubArrayWithZeroSum.Exists([1, 1, 1, 1, 1, 1, 1]);
+
+            Console.WriteLine($"{NobleInteger.FindNobleInteger([4, 7, 4, 10, 4])}");
+
+            PairsWithMinDifference.FindPairs([2, 1, 3, 6, 4]);
+
+            SortInAlternateAscDesc.SortPattern([4, 1, 2, 5, 3, 6, 8, 9]);
         }
     }
 }
