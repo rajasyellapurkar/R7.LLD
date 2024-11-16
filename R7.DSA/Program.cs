@@ -9,6 +9,7 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
+            SubArrayWithZeroSum.Exists([1,1,1,1,1,1,1]);
         }
 
         private static void OldProgramExecutions()
@@ -74,6 +75,13 @@ namespace R7.DSA
 
             int[][] rotatedMatrixBy90 = RotateMatrixByNinetyDegree.RotateMatrixBy90([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
             Common.Print2DArray(rotatedMatrixBy90);
+
+            RowWithMaximumNumberOfOnes.GetRowIndex([[0, 0, 0, 1],
+                [0, 1, 1, 1],
+                [1, 1, 1, 1],
+                [0, 0, 0, 0]]);
+
+            MinDistanceBetweenTwoEquals.FindIndices([2, 1, 4, 2, 6, 4, 2, 3, 2, 4, 3]);
         }
     }
 }
