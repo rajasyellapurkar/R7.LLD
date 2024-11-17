@@ -3,6 +3,7 @@ using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
 using R7.DSA.MultiDimensionalArrays;
 using R7.DSA.Sorting;
+using R7.DSA.String_Manipulation;
 
 namespace R7.DSA
 {
@@ -10,7 +11,6 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            ArrayWithSumOfTwoEqualSomeOfOtherTwoElements.Find([7, 3, 2, 8, 12, 1, 5, 4]);
         }
 
         private static void OldProgramExecutions()
@@ -91,6 +91,23 @@ namespace R7.DSA
             PairsWithMinDifference.FindPairs([2, 1, 3, 6, 4]);
 
             SortInAlternateAscDesc.SortPattern([4, 1, 2, 5, 3, 6, 8, 9]);
+
+            ArrayWithSumOfTwoEqualSomeOfOtherTwoElements.Find([7, 3, 2, 8, 12, 1, 5, 4]);
+
+            string reverseStr = "I am going to Delhi";
+            ReverseCharArrayWithSpaces.Reverse(reverseStr.ToCharArray());
+
+            ReverseCharArray.Reverse("Raja".ToCharArray());
+
+            IsCharArrayPalindrome.IsPalindrome("malayalam".ToCharArray());
+
+            Console.WriteLine(IsAirthmeticProgression.Check([9, 5, 7, 8, 6, 4, 1, 2, 3, 11]));
+
+            Console.WriteLine(KthSmallestElementWithSwap.Find([2, 5, 1, 98, 45, 7], 4));
+
+            SortByColor.Sort([0, 2, 1, 0, 1, 0, 0, 1, 2, 1, 0, 2]);
+
+            StepWiseSelectionSort.Sort([6, 4, 3, 7, 2, 8]);
         }
     }
 }

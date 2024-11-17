@@ -2,6 +2,12 @@
 {
     public class NobleInteger
     {
+        /// <summary>
+        /// Given an integer array A, find if an integer p exists in the array such that 
+        /// the number of integers greater than p in the array equals p.
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public static int FindNobleInteger(int[] arr)
         {
             int N = arr.Length;
