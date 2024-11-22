@@ -108,6 +108,8 @@ namespace R7.DSA
             SortByColor.Sort([0, 2, 1, 0, 1, 0, 0, 1, 2, 1, 0, 2]);
 
             StepWiseSelectionSort.Sort([6, 4, 3, 7, 2, 8]);
+
+            IsPalindromeWithSwap.Check("YMLAAALMA".ToCharArray());
         }
     }
 }
