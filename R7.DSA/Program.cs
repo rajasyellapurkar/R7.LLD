@@ -16,6 +16,14 @@ namespace R7.DSA
 
         private static void OldProgramExecutions()
         {
+            Console.WriteLine($"{new string(MiscStringManipulationProblems.ToUpper(['S', 'c', 'A', 'l', 'e', 'r', 'A', 'c', 'a', 'D', 'e', 'm', 'y']))}");
+            Console.WriteLine($"{new string(MiscStringManipulationProblems.ToUpper(['S', 'c', 'a', 'L', 'e', 'r', '#', '2', '0', '2', '0']))}");
+
+            Console.WriteLine($"{new string(MiscStringManipulationProblems.ToLower(['S', 'c', 'A', 'l', 'e', 'r', 'A', 'c', 'a', 'D', 'e', 'm', 'y']))}");
+            Console.WriteLine($"{new string(MiscStringManipulationProblems.ToLower(['S', 'c', 'a', 'L', 'e', 'r', '#', '2', '0', '2', '0']))}");
+
+            string rotatedCharArr = new string(MiscStringManipulationProblems.RotateStringByK(['s', 'c', 'a', 'l', 'e', 'r'], 3));
+            Console.WriteLine($"Rotate character array by k: {rotatedCharArr}");
 
             int[][] a = PatternPrinting2.Form2DArray(5);
             Common.Print2DArray(a);
@@ -124,6 +132,9 @@ namespace R7.DSA
             Console.WriteLine($"Is String Palindrome: {RecursionProblems.IsPalindrome(strRecur, 0, strRecur.Length - 1)}");
 
             Console.WriteLine($"Single Number II: {SingleNumber2.FindNumber([2, 3, 4, 5, 2, 2, 5, 4, 5, 4, 3, 3, 185])}");
+            
+            Console.WriteLine($" IsAlphaNumeric: {MiscStringManipulationProblems.IsAlpha(['S', 'c', 'a', 'l', 'e', 'r', 'A', 'c', 'a', 'd', 'e', 'm', 'y', '2', '0', '2', '0'])}");
+            Console.WriteLine($" IsAlphaNumeric: {MiscStringManipulationProblems.IsAlpha(['S', 'c', 'a', 'l', 'e', 'r', '#', '2', '0', '2', '0'])}");
         }
     }
 }
