@@ -2,6 +2,7 @@
 using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
 using R7.DSA.MultiDimensionalArrays;
+using R7.DSA.Recursion;
 using R7.DSA.Sorting;
 using R7.DSA.String_Manipulation;
 
@@ -110,6 +111,17 @@ namespace R7.DSA
             StepWiseSelectionSort.Sort([6, 4, 3, 7, 2, 8]);
 
             IsPalindromeWithSwap.Check("YMLAAALMA".ToCharArray());
+
+            PrintMatrixInSpiral.Print([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]);
+
+            // Recursion basic problems
+            Console.WriteLine($"Fibonacci of N: {RecursionProblems.Fibonacci(10)}");
+            Console.WriteLine($"Sum of N: {RecursionProblems.Sum(10)}");
+            Console.WriteLine($"Factorial of N: {RecursionProblems.Factorial(5)}");
+            string strRecur = "rajas";
+            Console.WriteLine($"Is String Palindrome: {RecursionProblems.IsPalindrome(strRecur, 0, strRecur.Length - 1)}");
+            strRecur = "naman";
+            Console.WriteLine($"Is String Palindrome: {RecursionProblems.IsPalindrome(strRecur, 0, strRecur.Length - 1)}");
         }
     }
 }
