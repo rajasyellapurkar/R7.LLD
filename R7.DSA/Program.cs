@@ -122,6 +122,8 @@ namespace R7.DSA
             Console.WriteLine($"Is String Palindrome: {RecursionProblems.IsPalindrome(strRecur, 0, strRecur.Length - 1)}");
             strRecur = "naman";
             Console.WriteLine($"Is String Palindrome: {RecursionProblems.IsPalindrome(strRecur, 0, strRecur.Length - 1)}");
+
+            Console.WriteLine($"Single Number II: {SingleNumber2.FindNumber([2, 3, 4, 5, 2, 2, 5, 4, 5, 4, 3, 3, 185])}");
         }
     }
 }
