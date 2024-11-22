@@ -2,6 +2,24 @@
 {
     public class SubArrayWithZeroSum
     {
+        public static List<int[]> BruteForce(int[] arr)
+        {
+            int N = arr.Length;
+            List<int[]> result = new();
+            for (int i = 0; i < N; i++)
+            {
+                int subArraySum = 0;
+                for (int j = i; j < N; j++)
+                {
+                    subArraySum += arr[j];
+                    if (subArraySum == 0)
+                    {
+                        result.Add([i, j]);
+                    }
+                }
+            }
+            return result;
+        }
         public static bool Exists(int[] arr)
         {
             int N = arr.Length;
