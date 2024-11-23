@@ -13,11 +13,13 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Is integer palindrome: {IsIntegerPalindrome.IsPalindrome(11211)}");
+            int[] rearrangeArr = [3, 2, 0, 1];
+            Console.WriteLine($"Rearranged array {ReArrangeArray.Rearrange(rearrangeArr)}");
         }
 
         private static void OldProgramExecutions()
         {
+            Console.WriteLine($"Is integer palindrome: {IsIntegerPalindrome.IsPalindrome(11211)}");
             Console.WriteLine($"Count of zeros in factorial: {CountZerosInFactorial.FindCount(100)}");
 
             Console.WriteLine($"{ExcelColumnNumber.GetColumnNumber("AB")}");
