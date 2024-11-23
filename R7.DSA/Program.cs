@@ -1,4 +1,5 @@
 ﻿using R7.DSA.Arrays;
+using R7.DSA.BasicMaths;
 using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
 using R7.DSA.MultiDimensionalArrays;
@@ -12,10 +13,15 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Is integer palindrome: {IsIntegerPalindrome.IsPalindrome(11211)}");
         }
 
         private static void OldProgramExecutions()
         {
+            Console.WriteLine($"Count of zeros in factorial: {CountZerosInFactorial.FindCount(100)}");
+
+            Console.WriteLine($"{ExcelColumnNumber.GetColumnNumber("AB")}");
+
             Console.WriteLine($"{new string(MiscStringManipulationProblems.ToUpper(['S', 'c', 'A', 'l', 'e', 'r', 'A', 'c', 'a', 'D', 'e', 'm', 'y']))}");
             Console.WriteLine($"{new string(MiscStringManipulationProblems.ToUpper(['S', 'c', 'a', 'L', 'e', 'r', '#', '2', '0', '2', '0']))}");
 
