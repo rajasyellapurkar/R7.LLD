@@ -3,6 +3,7 @@ using R7.DSA.BasicMaths;
 using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
 using R7.DSA.MultiDimensionalArrays;
+using R7.DSA.ProblemSolving;
 using R7.DSA.Recursion;
 using R7.DSA.Sorting;
 using R7.DSA.String_Manipulation;
@@ -13,12 +14,20 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            int[] rearrangeArr = [3, 2, 0, 1];
-            Console.WriteLine($"Rearranged array {ReArrangeArray.Rearrange(rearrangeArr)}");
         }
 
         private static void OldProgramExecutions()
         {
+            int[] subArrIndices = SubArrayWithLeastAverage.Find([7, 20, 10, 50, 90, 3, 40], 3);
+            Console.WriteLine($"{subArrIndices[0]}-{subArrIndices[1]}");
+            subArrIndices = SubArrayWithLeastAverage.FindUsingSlidingWindow([7, 20, 10, 50, 90, 3, 40], 3);
+            Console.WriteLine($"{subArrIndices[0]}-{subArrIndices[1]}");
+
+            Console.WriteLine($"{EquilibriumIndex.FindIndex([-7, 1, 5, 2, -4, 3, 0])}");
+
+            int[] rearrangeArr = [3, 2, 0, 1];
+            Console.WriteLine($"Rearranged array {ReArrangeArray.Rearrange(rearrangeArr)}");
+
             Console.WriteLine($"Is integer palindrome: {IsIntegerPalindrome.IsPalindrome(11211)}");
             Console.WriteLine($"Count of zeros in factorial: {CountZerosInFactorial.FindCount(100)}");
 
