@@ -14,10 +14,17 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
+            ConstructArray.Construct(20, 50, 5);
         }
 
         private static void OldProgramExecutions()
         {
+            Console.WriteLine($"sort-the-unsorted-array: {SortTheUnsortedArray.FindMinLength([10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60])}");
+
+            Console.WriteLine($"contiguous-array {ContiguousArray.FindMaxLength([1, 0, 1, 1, 1, 0, 0])}");
+
+            Console.WriteLine($"minimum-difference-puzzle {MinimumDifferencePuzzle.Find([10, 12, 10, 7, 5, 22], 4)}");
+
             int[] subArrIndices = SubArrayWithLeastAverage.Find([7, 20, 10, 50, 90, 3, 40], 3);
             Console.WriteLine($"{subArrIndices[0]}-{subArrIndices[1]}");
             subArrIndices = SubArrayWithLeastAverage.FindUsingSlidingWindow([7, 20, 10, 50, 90, 3, 40], 3);
