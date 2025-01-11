@@ -2,6 +2,7 @@
 {
     internal class AggressiveCows
     {
+        /* https://www.geeksforgeeks.org/problems/aggressive-cows/0 */
         public static int AggressiveCowsFind(int[] stalls, int k)
         {
             Array.Sort(stalls);
