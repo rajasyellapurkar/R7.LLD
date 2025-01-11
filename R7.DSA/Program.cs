@@ -5,6 +5,7 @@ using R7.DSA.Hashing;
 using R7.DSA.MultiDimensionalArrays;
 using R7.DSA.ProblemSolving;
 using R7.DSA.Recursion;
+using R7.DSA.Searching;
 using R7.DSA.Sorting;
 using R7.DSA.String_Manipulation;
 
@@ -14,11 +15,16 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            ConstructArray.Construct(20, 50, 5);
         }
 
         private static void OldProgramExecutions()
         {
+            PeakElement.Execute();
+
+            BinarySearch.Execute();
+
+            ConstructArray.Construct(20, 50, 5);
+
             Console.WriteLine($"sort-the-unsorted-array: {SortTheUnsortedArray.FindMinLength([10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60])}");
 
             Console.WriteLine($"contiguous-array {ContiguousArray.FindMaxLength([1, 0, 1, 1, 1, 0, 0])}");
