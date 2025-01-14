@@ -1,4 +1,5 @@
 ﻿using R7.DSA.Arrays;
+using R7.DSA.BackTracking;
 using R7.DSA.BasicMaths;
 using R7.DSA.BitManipulation;
 using R7.DSA.Hashing;
@@ -15,10 +16,13 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
+            MagicalNumber.Execute();
         }
 
         private static void OldProgramExecutions()
         {
+            GrayCode.Execute();
+
             PeakElement.Execute();
 
             BinarySearch.Execute();
