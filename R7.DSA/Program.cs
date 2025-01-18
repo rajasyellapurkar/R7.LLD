@@ -16,11 +16,15 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            MagicalNumber.Execute();
+            OccurrencesOfElement.Execute();
         }
 
         private static void OldProgramExecutions()
         {
+            DistinctSubsets.Execute();
+
+            MagicalNumber.Execute();
+
             GrayCode.Execute();
 
             PeakElement.Execute();
