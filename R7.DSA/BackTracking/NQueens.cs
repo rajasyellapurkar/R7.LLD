@@ -25,16 +25,16 @@
                 {
                     if (chessArr[i] == j)
                     {
-                        str += "Q"; // Add 'Q' if the queen is placed
+                        str += "Q";
                     }
                     else
                     {
-                        str += "."; // Otherwise, place a '.'
+                        str += ".";
                     }
                 }
-                distinctResult.Add(str); // Add the row (without extra quotes)
+                distinctResult.Add(str);
             }
-            result.Add(distinctResult); // Add the full board configuration to result
+            result.Add(distinctResult);
             return;
         }
         for (int i = 0; i < chessArr.Length; i++)
