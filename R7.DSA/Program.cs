@@ -16,11 +16,15 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            PermutationsOfArray.Execute();
         }
 
         private static void OldProgramExecutions()
         {
+            SolveNQueensSolution nQueen = new();
+            nQueen.SolveNQueens(4);
+
+            PermutationsOfArray.Execute();
+
             DistinctSubsets.Execute();
 
             OccurrencesOfElement.Execute();
