@@ -1,5 +1,6 @@
 ﻿namespace R7.DSA.Searching
 {
+    /* https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/ */
     class OccurrencesOfElement
     {
         public static void Execute()

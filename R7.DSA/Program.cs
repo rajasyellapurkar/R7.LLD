@@ -16,12 +16,14 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            OccurrencesOfElement.Execute();
+            PermutationsOfArray.Execute();
         }
 
         private static void OldProgramExecutions()
         {
             DistinctSubsets.Execute();
+
+            OccurrencesOfElement.Execute();
 
             MagicalNumber.Execute();
 
