@@ -1,5 +1,6 @@
 ﻿namespace R7.DSA.Searching
 {
+    // https://leetcode.com/problems/smallest-good-base/description/
     internal class SmallestGoodBaseProblem
     {
         public static void Execute()
