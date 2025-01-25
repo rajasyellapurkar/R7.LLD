@@ -16,10 +16,12 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
+            SpecialInteger.Execute();
         }
 
         private static void OldProgramExecutions()
         {
+            SmallestGoodBaseProblem.Execute();
             SolveNQueensSolution nQueen = new();
             nQueen.SolveNQueens(4);
 
