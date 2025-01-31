@@ -16,13 +16,13 @@ namespace R7.DSA
     {
         static void Main(string[] args)
         {
-            SingleElementInSortedArray.Execute();
+            SmallestGoodBaseProblem.Execute();
         }
 
         private static void OldProgramExecutions()
         {
+            SingleElementInSortedArray.Execute();
             SpecialInteger.Execute();
-            SmallestGoodBaseProblem.Execute();
             SolveNQueensSolution nQueen = new();
             nQueen.SolveNQueens(4);
 
